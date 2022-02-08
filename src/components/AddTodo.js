@@ -13,11 +13,11 @@ import store from "../stores/MainStore";
 class AddTodo extends React.Component{
 
     onPressButton(){
-        const a=this.props.store.addTodo({
+        this.props.store.addTodo({
             finished:false,
             text:this.props.store.addTodoInputText
         });
-        console.log(a)
+        
     }
 
     render(){
